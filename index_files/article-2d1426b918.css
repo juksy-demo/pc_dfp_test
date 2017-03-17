@@ -1,0 +1,2601 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: Roboto Condensed, Microsoft JhengHei, sans-serif;
+  min-width: 1050px;
+  color: #484848;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul#subMenu {
+  overflow: auto;
+  float: left;
+}
+
+ul#subMenu li {
+  display: block;
+  float: left;
+  padding: 0 7px 0 10px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1427px;
+  line-height: 40px;
+}
+
+ul#subMenu li:first-child {
+  padding-left: 0;
+  background-image: none;
+}
+
+ul#subMenu li a:hover {
+  opacity: 0.5;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: .5s;
+}
+
+img {
+  border: 0;
+}
+
+.clearBoth {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.imgLoading {
+  background: rgba(0, 0, 0, 0.1) url("https://www.juksy.com/img/loading.svg") no-repeat center center;
+}
+
+.asideSpace {
+  margin-top: 20px;
+}
+
+.articleSpace {
+  margin-top: 20px;
+}
+
+.asideTitle,
+.articleTitle {
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #c0c0c0;
+}
+
+.articleTitle {
+  width: 730px;
+}
+
+header {
+  background-color: #0a58a6;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+#headerTop {
+  background-color: #134175;
+}
+
+#headerTopWrap {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  overflow: auto;
+  height: 40px;
+}
+
+#subBar .input {
+  width: 150px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1407px;
+  float: left;
+  outline: none;
+  margin: 10px 0 0 10px;
+}
+
+#subBar .input:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#subBar .input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#subBar .input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#subBar .input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#headerWrap {
+  width: 100%;
+  height: 81px;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+#juksyLogo {
+  width: 450px;
+  float: left;
+}
+
+#juksyLogo a {
+  width: 286px;
+  height: 81px;
+  margin: 0 auto;
+  display: block;
+}
+
+#juksyLogo a img {
+  width: 100%;
+  height: 100%;
+}
+
+#logoLeft {
+  float: left;
+  width: 300px;
+  padding-top: 30px;
+}
+
+#logoRight {
+  float: left;
+  width: 300px;
+  padding-top: 30px;
+}
+
+nav {
+  font-size: 18px;
+  color: #595757;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+nav.fixed {
+  font-size: 16px;
+}
+
+nav.fixed #mainMenu>ul {
+  margin-left: 0;
+}
+
+nav.fixed #mainMenu>ul>li>a {
+  font-size: 16px;
+  margin: 0 21px;
+}
+
+nav.fixed #mainMenu>ul>li:first-child>a {
+  margin: 0 21px 0 54px;
+}
+
+nav.fixed #mainMenu>ul>li:first-child ul li:first-child a {
+  margin-left: 54px;
+}
+
+nav.fixed #mainMenu>ul>li:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+nav.fixed #mainMenu>ul>li:last-child>a {
+  margin: 0 0 0 21px;
+}
+
+nav.fixed #mainMenu ul ul li:first-child a {
+  margin-left: 21px;
+}
+
+#menuB {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  min-width: 1050px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#mainMenu {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1050px;
+}
+
+#mainMenu>ul {
+  float: left;
+  margin-left: 180.5px;
+}
+
+#mainMenu>ul>li:last-child.subFix {
+  background-image: none;
+}
+
+#mainMenu>ul>li:last-child>a {
+  margin: 0 0 0 18px;
+  text-align: right;
+}
+
+#mainMenu>ul>li a {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin: 0 17px;
+  display: block;
+  text-decoration: none;
+  line-height: 53px;
+  text-align: center;
+  transition: none;
+}
+
+#mainMenu>ul>li a.channel_now {
+  background: url("https://www.juksy.com/img/menub_line.png") repeat-x left bottom;
+}
+
+#mainMenu>ul>li:first-child>a {
+  margin: 0 19px 0 0;
+  text-align: left;
+}
+
+#mainMenu>ul>li:first-child ul li:first-child a {
+  margin-left: 0;
+}
+
+#mainMenu>ul>li:hover {
+  color: #0a58a6;
+}
+
+#mainMenu ul li {
+  float: left;
+  overflow: auto;
+  display: block;
+}
+
+#mainMenu ul ul {
+  z-index: 1001;
+  display: none;
+  margin-top: 0;
+  position: absolute;
+  width: auto;
+}
+
+#mainMenu ul ul li {
+  float: left;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1100px;
+}
+
+#mainMenu ul ul li:first-child {
+  background-image: none;
+}
+
+#mainMenu ul ul li:first-child a {
+  margin-left: 17px;
+}
+
+#mainMenu ul ul li a {
+  margin: 0 10px;
+  padding: 0;
+  line-height: 53px;
+  text-align: left;
+  color: #fff;
+}
+
+#mainMenu ul ul li a:hover {
+  color: #01e6a8;
+}
+
+#mainMenu ul ul li:last-child a {
+  margin-right: 0;
+}
+
+#navHome {
+  width: 0;
+  height: 36px;
+  background: url("https://www.juksy.com/img/nav_home.png") no-repeat;
+  background-size: 100% auto;
+  float: left;
+  margin-top: 8px;
+  opacity: 1;
+}
+
+#mainWrap {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #efefef;
+  color: #666666;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#footerWrap {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 30px 0 80px 0;
+}
+
+#keywords {
+  font-size: 27px;
+  text-align: center;
+}
+
+#keywords h3 {
+  font-weight: normal;
+}
+
+#keywords ul {
+  overflow: auto;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 20px auto 50px auto;
+}
+
+#keywords ul li {
+  list-style: none;
+  float: left;
+}
+
+#keywords ul li a {
+  width: 105px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  display: block;
+}
+
+#keywords ul li a:hover {
+  opacity: 0.5;
+}
+
+#footMenu {
+  overflow: auto;
+  margin: 30px 0;
+}
+
+#footMenu ul {
+  overflow: hidden;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#footMenu ul li {
+  list-style: none;
+  float: left;
+}
+
+#footMenu ul li a {
+  display: block;
+  padding: 0 10px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -924px;
+}
+
+#footMenu ul li a:hover {
+  opacity: 0.5;
+}
+
+#footMenu ul li:first-child a {
+  background-image: none;
+}
+
+#footMenu ul li:last-child a {
+  color: #fff;
+  display: block;
+  background-color: #0a58a6;
+}
+
+#footLogo {
+  float: left;
+}
+
+#footMenuRight {
+  float: right;
+  text-align: right;
+  font-size: 14px;
+}
+
+.footerNav {
+  width: 100%;
+  color: #fff;
+  background-color: #0a58a6;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.footerNav .footerNavWrap {
+  width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footerNav .footerNavWrap .footerNavL {
+  overflow: hidden;
+  float: left;
+  font-size: 20px;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.follow {
+  overflow: hidden;
+  float: left;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.follow li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.follow li a.fb {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://www.juksy.com/img/juksy_fb.png");
+  background-position: center center;
+  background-size: 18px auto;
+  background-repeat: no-repeat;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.share {
+  overflow: hidden;
+  float: left;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.share li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.share li .fb {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -993px;
+  cursor: pointer;
+}
+
+.footerNav .footerNavWrap .footerNavL ul.share li .txt {
+  cursor: pointer;
+}
+
+.footerNav .footerNavWrap .footerNavR {
+  float: right;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+
+.footerNav .footerNavWrap .footerNavR .title {
+  float: left;
+  background-color: #fff;
+  color: #0a58a6;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.footerNav .footerNavWrap .footerNavR .titleArrow {
+  width: 9px;
+  height: 50px;
+  display: block;
+  float: left;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -943px;
+}
+
+.footerNav .footerNavWrap .footerNavR ul.favorite {
+  float: right;
+  margin-left: 10px;
+  width: 440px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.footerNav .footerNavWrap .footerNavR ul.favorite li {
+  list-style: none;
+  display: block;
+}
+
+.footerNav .footerNavWrap .footerNavR ul.favorite li a:hover {
+  opacity: 0.5;
+}
+
+.footerAd {
+  width: 100%;
+  background-color: #134175;
+  color: #fff;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  z-index: 2;
+  display: block;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.footerAd .close {
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("https://www.juksy.com/img/article/footad_close.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.footerAd .close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footerAd .footerAdWrap {
+  width: 970px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 250px;
+}
+
+#goTop {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #0a58a6;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1043px;
+  border: 1px solid #fff;
+  position: fixed;
+  right: 0;
+  bottom: 63px;
+  z-index: 2;
+}
+
+#goTop:hover {
+  background-color: #01e6a8;
+  border: 1px solid #fff;
+}
+
+#cover {
+  display: none;
+  table-layout: fixed;
+  height: 100%!important;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity .2s linear 0s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+#cover div.popup-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#cover div.popup-inner div.popup-content {
+  display: inline-block;
+  outline: none;
+  text-align: left;
+  position: relative;
+}
+
+#cover div.popup-inner div.popup-content button {
+  background: transparent url(https://www.juksy.com/img/close_btn_dfp.png);
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#cover.active {
+  display: table;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1050px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+form#subBar {
+  height: 40px;
+  overflow: hidden;
+  float: right;
+  min-width: 260px;
+}
+
+form#subBar ul.member {
+  overflow: auto;
+  float: left;
+  width: 100px;
+}
+
+form#subBar ul.member.floatRight {
+  float: right;
+}
+
+form#subBar ul.member li {
+  display: block;
+  float: right;
+  padding: 0 7px 0 10px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1427px;
+  line-height: 40px;
+}
+
+form#subBar ul.member li:first-child {
+  background-image: none;
+}
+
+form#subBar ul.member li:last-child {
+  padding-right: 0;
+}
+
+form#subBar ul.member li a:hover {
+  opacity: 0.5;
+}
+
+form#subBar ul.language {
+  font-size: 11px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  font-weight: 700;
+  overflow: auto;
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+form#subBar ul.language li {
+  padding: 1px 5px;
+  background-image: none;
+  float: left;
+  list-style: none;
+}
+
+form#subBar ul.language li:hover {
+  color: #01e6a8;
+}
+
+form#subBar ul.language li.selected {
+  background-color: #fff;
+  color: #0a58a6;
+}
+
+form#subBar ul.language li a:hover {
+  text-decoration: none;
+}
+
+form#subBar .bottom {
+  overflow: auto;
+  float: left;
+}
+
+form#subBar a.fb {
+  display: block;
+  margin-top: 4px;
+}
+
+form#subBar .keywords {
+  position: fixed;
+  z-index: 1001;
+  top: 30px;
+  overflow: hidden;
+  display: block;
+  color: #484848;
+  font-size: 14px;
+  font-family: Roboto Condensed, Microsoft JhengHei, sans-serif;
+  letter-spacing: 0;
+  min-width: 260px;
+  display: none;
+}
+
+form#subBar .keywords .keywordsBg {
+  position: relative;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+form#subBar .keywords .keywordsBg:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 6px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1093px;
+  position: absolute;
+  top: 6px;
+  right: 130px;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap {
+  background-color: #fff;
+  float: right;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap .title {
+  display: block;
+  color: #0a58a6;
+  margin-bottom: 10px;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul {
+  overflow: auto;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul li:nth-child(4n) {
+  clear: left;
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul li a {
+  display: block;
+  padding: 3px 8px;
+  background-color: #e6e6e6;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+form#subBar .keywords .keywordsBg .keywordsWrap ul li a:hover {
+  background-color: #0a58a6;
+  color: #fff;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxSlideshow {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+  background: none;
+}
+
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#colorbox {
+  box-sizing: content-box;
+  outline: 0;
+  box-shadow: -5px 15px 12px -12px rgba(0, 0, 0, 0.75);
+}
+
+#colorbox.popupWin {
+  box-shadow: none;
+}
+
+#colorbox.popupWin #cboxClose {
+  background-image: url(https://www.juksy.com/img/close_btn_dfp.png);
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
+}
+
+#colorbox.popupIdle {
+  box-shadow: none;
+}
+
+#colorbox.popupIdle #cboxClose {
+  background: transparent url(https://www.juksy.com/img/close_btn_dfp.png);
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
+  right: 0px;
+  top: 0px;
+}
+
+#colorbox.popupIdle #cboxClose:hover {
+  animation: rotateX 1s linear infinite;
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  50% {
+    transform: rotate(91deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cboxWrapper {
+  max-width: none;
+}
+
+#cboxMiddleLeft {
+  clear: left;
+}
+
+#cboxBottomLeft {
+  clear: left;
+}
+
+#cboxContent {
+  position: relative;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: transparent;
+  box-sizing: content-box;
+}
+
+#cboxLoadedContent {
+  overflow: auto;
+  background-color: transparent;
+  box-sizing: content-box;
+}
+
+#cboxTitle {
+  margin: 0;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #ccc;
+}
+
+#cboxLoadingOverlay,
+#cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cboxLoadingGraphic {
+  background: url("https://www.juksy.com/img/loading.svg") no-repeat center center;
+}
+
+#cboxPrevious {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -32px;
+  background: url("https://www.juksy.com/img/controls.png") no-repeat top left;
+  width: 28px;
+  height: 65px;
+  text-indent: -9999px;
+}
+
+#cboxPrevious:active {
+  outline: 0;
+}
+
+#cboxPrevious:hover {
+  background-position: bottom left;
+}
+
+#cboxNext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -32px;
+  background: url("https://www.juksy.com/img/controls.png") no-repeat top right;
+  width: 28px;
+  height: 65px;
+  text-indent: -9999px;
+}
+
+#cboxNext:active {
+  outline: 0;
+}
+
+#cboxNext:hover {
+  background-position: bottom right;
+}
+
+#cboxClose {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  background: url("https://www.juksy.com/img/close_btn.png") no-repeat center center;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: 60% auto;
+  transition-duration: 300ms;
+}
+
+#cboxClose:active {
+  outline: 0;
+}
+
+#cboxClose:hover {
+  background-size: 80% auto;
+}
+
+#cboxSlideshow {
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: 90px;
+  color: #fff;
+}
+
+#cboxSlideshow:active {
+  outline: 0;
+}
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+}
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc;
+}
+
+#cboxCurrent {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: #ccc;
+}
+
+#dfp_160_600_L {
+  width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+#dfp_160_600_R {
+  width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+#movieMag {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#movieMag .movie {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+#movieMag .movie .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 620px;
+}
+
+#movieMag .movie .youtube-container {
+  display: block;
+  width: 720px;
+  height: 405px;
+}
+
+#movieMag .movie .youtube-player {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+#movieMag .movie .play-button {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: url("https://www.juksy.com/img/video_play_btn.png") no-repeat center center;
+  background-size: 100px auto;
+  transition: .5s;
+}
+
+#movieMag .movie .play-button:hover {
+  background-image: url("https://www.juksy.com/img/video_play_btn_hover.png");
+}
+
+#movieMag .movie #player {
+  width: 720px;
+  height: 405px;
+}
+
+#movieMag .movie img.youtube-thumb {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -68px;
+  height: auto;
+}
+
+#movieMag .mag {
+  float: left;
+}
+
+#channel {
+  width: 300px;
+}
+
+#channel .channelBar {
+  width: 1050px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+#channel .channelBar .channelCat {
+  width: 130px;
+  height: 158px;
+  padding-top: 80px;
+  background-color: #c0c0c0;
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 2em;
+}
+
+#channel a.channelBox {
+  display: block;
+}
+
+#channel a.channelBox .pic {
+  width: 300px;
+  height: 176px;
+  overflow: hidden;
+  position: relative;
+}
+
+#channel a.channelBox .pic img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+#channel a.channelBox .pic .tag {
+  width: 80px;
+  height: 60px;
+  background: url("https://www.juksy.com/img/index/channel_tag.png") no-repeat right top;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  text-align: right;
+  padding: 10px 10px 0 0;
+}
+
+#channel a.channelBox .pic span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#channel a.channelBox:hover .pic img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+#channel a.channelBox:hover .pic span {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#channel a.channelBox:hover .title p {
+  color: #0a58a6;
+}
+
+#channel a.channelBox .title {
+  padding: 10px 30px;
+  background-color: #e6e6e6;
+}
+
+#channel a.channelBox .title p {
+  height: 3em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+#dfp_1050_200_middle {
+  width: 1050px;
+  margin: 40px 0;
+}
+
+#dfp_1050_200_bottom {
+  width: 1050px;
+  margin: 40px 0;
+}
+
+#article {
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+#article .indexTitle {
+  background-color: #c0c0c0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+#article .indexTitle .en {
+  font-size: 16px;
+}
+
+#article ul.recBox {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+
+#article ul.recBox li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+
+#article ul.recBox li:last-child {
+  margin-right: 0;
+}
+
+#article ul.recBox li a {
+  display: block;
+  width: 340px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+#article ul.recBox li a .tag {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #0a58a6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#article ul.recBox li a img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+#article ul.recBox li a:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+#article ul.recBox li a:hover .cover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#article ul.recBox li a .cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: .5s;
+}
+
+#article ul.recBox li a .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 50px;
+  width: 240px;
+}
+
+#article ul.recBox li a .title span {
+  display: block;
+  color: #fff;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+}
+
+#article ul.squareBox {
+  overflow: auto;
+}
+
+#article ul.squareBox li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+
+#article ul.squareBox li:last-child {
+  margin-right: 0;
+}
+
+#article ul.squareBox li a {
+  display: block;
+  width: 251.25px;
+  height: 251.25px;
+  overflow: hidden;
+  position: relative;
+}
+
+#article ul.squareBox li a .tag {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #0a58a6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#article ul.squareBox li a img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+#article ul.squareBox li a:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+#article ul.squareBox li a:hover .cover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#article ul.squareBox li a .cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: .5s;
+}
+
+#article ul.squareBox li a .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  width: 191.25px;
+}
+
+#article ul.squareBox li a .title span {
+  display: block;
+  color: #fff;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+}
+
+#blog {
+  margin: 40px 0;
+}
+
+#blog a.blogger {
+  display: block;
+  width: 210px;
+  height: 399px;
+  overflow: hidden;
+  position: relative;
+}
+
+#blog a.blogger img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+#blog a.blogger:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 0;
+}
+
+#blog a.blogger:hover span {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#blog a.blogger span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#blog a.blogger .detail {
+  width: 190px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 0 10px;
+  background-image: linear-gradient(180deg, rgba(72, 72, 72, 0) 0, #484848 100%);
+}
+
+#blog a.blogger .detail .title {
+  padding: 20px 0 5px;
+}
+
+#blog a.blogger .detail .name {
+  font-size: 45px;
+  height: 1.5em;
+}
+
+#movieSlogan,
+#blogSlogan {
+  color: #0a58a6;
+  font-style: italic;
+  font-size: 55px;
+  position: absolute;
+  margin-left: -20px;
+}
+
+#dfp_1050_200_top {
+  width: 1050px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#mainContain {
+  width: 1050px;
+  overflow: hidden;
+}
+
+#mainContain.channel {
+  margin-bottom: 20px;
+}
+
+#mainContain.article {
+  margin: 20px 0;
+}
+
+#mainLeft {
+  width: 750px;
+  float: left;
+}
+
+#mainLeftWrap {
+  width: 750px;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+#asideWrap {
+  width: 300px;
+}
+
+ul#path {
+  width: 730px;
+  overflow: auto;
+  border-bottom: 1px solid #0a58a6;
+}
+
+ul#path #pathLogo {
+  float: left;
+}
+
+ul#path li {
+  list-style: none;
+  display: block;
+  float: left;
+  color: #0a58a6;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1153px;
+}
+
+ul#path li a:hover {
+  text-decoration: underline;
+}
+
+ul#articleBox {
+  margin: 10px 0;
+}
+
+ul#articleBox>li {
+  list-style: none;
+  display: block;
+  width: 730px;
+  overflow: auto;
+}
+
+ul#articleBox>li:hover a.picBox .imgBlue {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul#articleBox>li:hover a.picBox img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+ul#articleBox>li:hover .articleMain a.title {
+  color: #0a58a6;
+}
+
+ul#articleBox>li .articleMain {
+  width: 490px;
+  line-height: 30px;
+  float: left;
+  margin-left: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+ul#articleBox>li .articleMain .content {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  height: 75px;
+  overflow: hidden;
+  margin: 10px 0 20px;
+}
+
+ul#articleBox>li .articleMain .socialBox {
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+ul#articleBox>li .articleMain .socialBox ul.socialPlug {
+  height: 30px;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+
+ul#articleBox>li .articleMain .socialBox ul.socialPlug li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 2px;
+}
+
+ul#articleBox>li .articleMain a.title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  height: 60px;
+  overflow: hidden;
+  display: block;
+  margin-top: 20px;
+}
+
+ul#articleBox>li .articleMain ul.channel_all {
+  overflow: auto;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: #808080;
+}
+
+ul#articleBox>li .articleMain ul.channel_all>li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+ul#articleBox>li .articleMain ul.channel_all>li:first-child {
+  line-height: 1.5em;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+ul#articleBox>li .articleMain ul.channel_all span {
+  display: block;
+  float: right;
+  line-height: 20px;
+}
+
+ul#articleBox>li .articleMain ul.channel_all li a {
+  display: block;
+  line-height: 1.5em;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+ul#articleBox>li .articleMain ul.channel_all li a:hover {
+  color: #fff;
+  background-color: #0a58a6;
+}
+
+ul#articleBox>li a.picBox {
+  display: block;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+ul#articleBox>li a.picBox .imgBlue {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 88, 166, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: .5s;
+}
+
+ul#articleBox>li a.picBox .tag {
+  width: 55px;
+  height: 54px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1467px;
+  color: #fff;
+  text-align: right;
+  padding: 5px 5px 0 0;
+}
+
+ul#articleBox>li a.picBox img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+ul#newsTab {
+  overflow: auto;
+}
+
+ul#newsTab li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #808080;
+  background-color: #efefef;
+  cursor: pointer;
+  transition: .5s;
+}
+
+ul#newsTab li:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+
+ul#newsTab li.choose {
+  color: #fff;
+  background-color: #ccc;
+}
+
+ul.searchTag {
+  width: 730px;
+  overflow: auto;
+  margin: 15px 0 10px;
+}
+
+ul.searchTag li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+ul.searchTag li a {
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px;
+  background-color: #c0c0c0;
+  color: #fff;
+}
+
+ul.searchTag li a.selected {
+  background-color: #0a58a6;
+}
+
+ul.searchTag li a:hover {
+  background-color: #0a58a6;
+}
+
+ul#newsCon li {
+  list-style: none;
+}
+
+ul#newsCon li a {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 2em;
+  background-color: #fff;
+  border-bottom: 1px solid #d2dcec;
+}
+
+ul#newsCon li a:hover {
+  color: #fff;
+  background-color: #808080;
+}
+
+ul#newsCon li a:hover .newsImg:after {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul#newsCon li a:hover .newsImg img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+ul#newsCon li a:hover .newsTitle .newsNum {
+  color: #808080;
+  background-color: #fff;
+}
+
+ul#newsCon li a .newsImg {
+  width: 300px;
+  height: 176px;
+  overflow: hidden;
+  position: relative;
+}
+
+ul#newsCon li a .newsImg:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: .5s;
+}
+
+ul#newsCon li a .newsImg img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+ul#newsCon li a .newsTitle {
+  overflow: auto;
+  padding: 5px 0;
+}
+
+ul#newsCon li a .newsTitle .newsNum {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #ccc;
+  float: left;
+  margin: 5px 10px;
+}
+
+ul#newsCon li a .newsTitle span {
+  display: block;
+  height: 2em;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+ul#recommend li {
+  list-style: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+ul#recommend li a {
+  width: 300px;
+  height: 176px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+ul#recommend li a .tag {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #0a58a6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+ul#recommend li a .title {
+  width: 280px;
+  height: 48px;
+  overflow: hidden;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 2em;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+  transition: .5s;
+}
+
+ul#recommend li a .title span {
+  display: block;
+  overflow: hidden;
+  height: 48px;
+}
+
+ul#recommend li a img {
+  width: 100%;
+  height: 100%;
+}
+
+ul#recommend li a:hover .title {
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(10, 88, 166, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#dfp_728_90_middle {
+  margin-bottom: 20px;
+}
+
+#pageNav {
+  width: 730px;
+  clear: both;
+  color: #0a58a6;
+  border: 1px solid #0a58a6;
+  padding: 10px 0;
+}
+
+#pageNav #pageNavWrap {
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#pageNav #pageNavWrap>a {
+  display: block;
+  padding: 0 10px;
+  float: left;
+}
+
+#pageNav #pageNavWrap ul {
+  overflow: auto;
+  display: block;
+  float: left;
+}
+
+#pageNav #pageNavWrap ul li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+#pageNav #pageNavWrap ul li a {
+  padding: 0 10px;
+}
+
+#pageNav #pageNavWrap li.selected a {
+  text-decoration: underline;
+}
+
+#pageNav #pageNavWrap a:hover {
+  text-decoration: underline;
+}
+
+#mainLeft.notFoundPage {
+  width: 1050px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mainLeft.notFoundPage #mainLeftWrap {
+  width: 1050px;
+}
+
+#mainLeft.notFoundPage #mainLeftWrap ul#path {
+  width: 1050px;
+}
+
+.notFound {
+  text-align: center;
+  padding: 50px 0px;
+  color: #ccc;
+  background-color: #efefef;
+}
+
+.notFound .en {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0px;
+  line-height: 1.5em;
+}
+
+.notFound .ch {
+  font-size: 18px;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.notFound .ch a {
+  color: #0a58a6;
+  text-decoration: underline;
+}
+
+.notFound.article {
+  width: 730px;
+  margin-top: 10px;
+}
+
+.notFound.page {
+  margin-top: 10px;
+  height: 40vh;
+  padding: 20vh 0 0 0;
+}
+
+#dfp_300_150_aside_top {
+  width: 300px;
+}
+
+#dfp_300_250_aside_top_1 {
+  width: 300px;
+}
+
+#dfp_300_250_aside_top_2 {
+  width: 300px;
+}
+
+#dfp_300_aside_bottom {
+  margin: 0;
+  padding: 0;
+}
+
+#date {
+  float: right;
+}
+
+article {
+  width: 730px;
+}
+
+article h2,
+article .picSource {
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+article h2 a,
+article .picSource a {
+  color: #0a58a6;
+}
+
+article h2 a:hover,
+article .picSource a:hover {
+  text-decoration: underline;
+}
+
+article .socialBox {
+  overflow: auto;
+  margin-top: 20px;
+}
+
+article .socialBox ul.socialPlug {
+  height: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+article .socialBox ul.socialPlug li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+article .socialBox .source2 {
+  color: #0a58a6;
+  float: right;
+}
+
+#articleHead {
+  padding: 20px 0;
+  position: relative;
+}
+
+#articleHead h1 {
+  width: 730px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #0a58a6;
+}
+
+#articleHead .source {
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#articleHead .source a {
+  color: #0a58a6;
+}
+
+#articleHead #fbLike {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+
+#articleMain {
+  font-family: Roboto Condensed, Microsoft JhengHei, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 2em;
+  margin-bottom: 20px;
+  padding: 0 65px;
+}
+
+#articleMain h1 {
+  color: #2969B0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#articleMain h2 {
+  color: #f37934;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#articleMain p {
+  margin: 10px 0;
+}
+
+#articleMain a {
+  color: #0a58a6;
+}
+
+#articleMain img {
+  position: relative;
+  max-width: 100%;
+}
+
+#articleMain img.fr-dib {
+  margin: 5px auto;
+  display: block;
+  float: none;
+  vertical-align: top;
+}
+
+#articleMain img.fr-dib.fr-fil {
+  margin-left: 0;
+}
+
+#articleMain img.fr-dib.fr-fir {
+  margin-right: 0;
+}
+
+#articleMain img.fr-dii {
+  display: inline-block;
+  float: none;
+  vertical-align: bottom;
+  margin: 0;
+}
+
+#articleMain img.fr-dii.fr-fil {
+  float: left;
+}
+
+#articleMain img.fr-dii.fr-fir {
+  float: right;
+}
+
+#articleMain .figcaption {
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+#articleMain .figcaption a {
+  color: #ccc;
+}
+
+#articleMain ul.figcaption {
+  letter-spacing: 1px;
+  margin: 5px 0 20px 0;
+  text-align: inherit;
+}
+
+#articleMain ul.figcaption li {
+  list-style: none;
+  display: block;
+}
+
+#articleMain ul.figcaption li.h1 {
+  font-size: 14px;
+  text-align: left;
+  color: #484848;
+  letter-spacing: 2px;
+}
+
+#articleMain ul.figcaption li.desc {
+  font-size: 12px;
+  text-align: justify;
+  line-height: 2em;
+  color: #999;
+  letter-spacing: 1.6px;
+}
+
+#articleMain ul.figcaption li.desc a {
+  color: #999;
+  text-decoration: underline;
+}
+
+#articleMain ul.figcaption li.cite {
+  font-size: 10px;
+  text-align: right;
+  line-height: 2em;
+  color: #ccc;
+}
+
+#articleMain ul.figcaption li.cite a {
+  color: #ccc;
+}
+
+#source {
+  font-size: 16px;
+  line-height: 2em;
+  margin-bottom: 20px;
+  padding: 0 65px;
+}
+
+#source a {
+  color: #0a58a6;
+}
+
+#articlepage {
+  text-align: center;
+  color: #0a58a6;
+  margin-top: 20px;
+}
+
+#articlepage a {
+  margin: 0 10px;
+}
+
+#articlepage a:hover {
+  text-decoration: underline;
+}
+
+#articlepage a.selected {
+  text-decoration: underline;
+}
+
+.article_juksy_recommend {
+  padding: 20px 65px 0 65px;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.article_juksy_recommend .title {
+  font-size: 20px;
+  color: #738498;
+}
+
+.article_juksy_recommend ul.list {
+  padding: 10px 0;
+  margin: 5px 0 0 15px;
+}
+
+.article_juksy_recommend ul.list li {
+  list-style: square;
+  display: list-item;
+  color: #0091EA;
+  margin-bottom: 10px;
+}
+
+.article_juksy_recommend ul.list li a {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.article_juksy_recommend a.banner {
+  display: block;
+}
+
+.article_juksy_recommend a.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.article_recommend_title {
+  padding: 30px 65px 25px 65px;
+}
+
+.article_recommend_title span {
+  font-size: 16px;
+  color: #fff;
+  background-color: #484848;
+  padding: 10px;
+}
+
+.popinWrap {
+  width: 730px;
+}
+
+.picNotice {
+  width: 690px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.picNotice a {
+  float: right;
+  color: #0a58a6;
+}
+
+.picNotice a:hover {
+  opacity: 0.5;
+}
+
+#dfp_336_280_article_bottom_L {
+  float: left;
+}
+
+#dfp_336_280_article_bottom_R {
+  float: right;
+  margin-right: 20px;
+}
+
+#dfp_728_90_article_middle {
+  width: 728px;
+}
+
+#dfp_728_90_article_top {
+  width: 728px;
+  margin-bottom: 20px;
+}
+
+.articleBack {
+  background-color: #0a58a6;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.articleBack:hover {
+  background-color: #01e6a8;
+}
+
+#socialBox {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  width: 80px;
+  height: 320px;
+  overflow: hidden;
+  display: none;
+}
+
+#socialBox ul.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#socialBox ul.cover li {
+  list-style: none;
+  display: block;
+  width: 80px;
+  height: 79px;
+  background-color: #0a58a6;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#socialBox ul.cover li.fbLike {
+  background-image: url("https://www.juksy.com/img/article/social_box_cover_fb.png");
+  background-size: auto 30px;
+  top: 0;
+}
+
+#socialBox ul.cover li.fbShare {
+  background-image: url("https://www.juksy.com/img/article/social_box_cover_fb2.png");
+  background-size: auto 30px;
+  top: 80px;
+}
+
+#socialBox ul.cover li.twitter {
+  background-image: url("https://www.juksy.com/img/article/social_box_cover_twitter.png");
+  background-size: auto 25px;
+  top: 160px;
+}
+
+#socialBox ul.cover li.google {
+  background-image: url("https://www.juksy.com/img/article/social_box_cover_google.png");
+  background-size: auto 25px;
+  top: 240px;
+}
+
+#socialBox ul.plugin li {
+  list-style: none;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+#socialBox ul.plugin li>div {
+  float: left;
+}
+
+#socialBox ul.plugin li.fbLike>div {
+  margin: 9px 0 0 13px;
+  width: 55px;
+  height: 61px;
+  overflow: hidden;
+}
+
+#socialBox ul.plugin li.fbShare>div {
+  margin: 9px 0 0 15px;
+}
+
+#socialBox ul.plugin li.twitter>div {
+  margin: 9px 0 0 11px;
+}
+
+#socialBox ul.plugin li.google>div {
+  margin: 10px 0 0 13px;
+}
+
+#fbPageLike {
+  width: 400px;
+  height: 150px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 1.5em;
+  border-bottom: 20px solid #01e6a8;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: url("https://www.juksy.com/img/article/fb_like_window_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#content18 {
+  width: 480px;
+  height: 235px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -1172px;
+  border-bottom: 15px solid #0a58a6;
+}
+
+#content18 .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #484848;
+  letter-spacing: 3px;
+  padding-top: 76px;
+  padding-bottom: 24px;
+}
+
+#content18 .title .row2 {
+  font-size: 16px;
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+#content18 ul.btn {
+  overflow: auto;
+  padding: 0 74px;
+}
+
+#content18 ul.btn li {
+  list-style: none;
+  display: block;
+  float: left;
+  background-color: #1fb8de;
+  border: 1px solid #1fb8de;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  cursor: pointer;
+  padding: 10px 34px;
+  transition: .5s;
+}
+
+#content18 ul.btn li:last-child {
+  float: right;
+  background-color: transparent;
+  border: 1px solid #666666;
+  color: #484848;
+}
+
+@media screen and (min-width: 1050px) {
+  #socialBox {
+    display: block;
+  }
+}
+
+a#fbShare {
+  width: 686px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  overflow: hidden;
+  padding: 0 20px;
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -824px;
+  border-radius: 5px;
+  border: 2px ridge #0a58a6;
+  box-shadow: inset 0 0 2px 1px rgba(255, 255, 255, 0.5);
+  transition: none;
+}
+
+a#fbShare:hover {
+  background-image: url("https://www.juksy.com/img/base.png");
+  background-repeat: no-repeat;
+  background-position: 0 -874px;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+a#fbShare span {
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+
+a.moreBtn {
+  width: 141px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("https://www.juksy.com/img/article/smilepay_yellow_btn.png");
+  background-repeat: repeat-x;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+a.moreBtn:hover {
+  color: #dd4b39;
+  background-image: url("https://www.juksy.com/img/article/smilepay_yellow_btn_hover.png");
+  box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+form.smilepay {
+  display: inline-block;
+  font-weight: bold;
+}
+
+form.smilepay .submitRec {
+  width: 150px;
+  border-radius: 15px;
+  background-color: #333333;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1em;
+}
+
+form.smilepay .submitRec input {
+  display: block;
+  width: 140px;
+  height: 40px;
+  line-height: 0.7em;
+  margin: 0 auto 10px auto;
+  background-image: url("https://www.juksy.com/img/article/smilepay_red_btn.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  text-indent: 30px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+form.smilepay .submitRec input:hover {
+  background-image: url("https://www.juksy.com/img/article/smilepay_red_btn_hover.png");
+}
