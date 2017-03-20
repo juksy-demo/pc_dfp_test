@@ -139,6 +139,7 @@ googletag.cmd.push(function() {
     googletag.cmd.push(function() {
       // 單一請求會照成無效曝光，必須關閉 SRA mode
       // googletag.pubads().enableSingleRequest();
+      googletag.defineSlot('/35943210/juksy_article_mid_640x360', [[355, 200], [640, 360], [300, 250]], 'div-gpt-ad-1489737468957-0').addService(googletag.pubads());
       googletag.pubads().collapseEmptyDivs();
       googletag.enableServices();
     });
@@ -159,12 +160,12 @@ googletag.cmd.push(function() {
   js.id = id;
   js.src = "https://platform.twitter.com/widgets.js";
   fjs.parentNode.insertBefore(js, fjs);
- 
+
   t._e = [];
   t.ready = function(f) {
     t._e.push(f);
   };
- 
+
   return t;
 }(document, "script", "twitter-wjs"));</script>
 <script type="text/javascript" src="./index_files/plusone.js" async="" defer="" gapi_processed="true"></script> -->
@@ -230,7 +231,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
     <link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html">
     <style id="style-1-cropbar-clipper">
     /* Copyright 2014 Evernote Corporation. All rights reserved. */
-    
+
     .en-markup-crop-options {
       top: 18px !important;
       left: 50% !important;
@@ -239,7 +240,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       border: 2px rgba(255, 255, 255, .38) solid !important;
       border-radius: 4px !important;
     }
-    
+
     .en-markup-crop-options div div:first-of-type {
       margin-left: 0px !important;
     }
@@ -250,7 +251,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       overflow: hidden;
       position: relative;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_header {
       display: none;
       width: 100%;
@@ -267,29 +268,29 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       background-size: auto 60px;
       z-index: 0;
     }
-    
+
     #_popIn_recommend ._popIn_noimage a {
       background: url(//api.popin.cc/images/noimg.png) no-repeat center;
     }
-    
+
     #_popIn_recommend ._popIn_noimage a img {
       display: none;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_category {
       display: none;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_date {
       display: none;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_img {
       width: 100%;
       height: 151px;
       overflow: hidden;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_img a {
       margin: 0px;
       width: 100%;
@@ -305,7 +306,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       -o-transition: .5s;
       -webkit-transition: .5s;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_article:hover ._popIn_recommend_art_img a {
       -webkit-transform: scale(1.2);
       -webkit-transform-origin: 50% 50%;
@@ -318,9 +319,9 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       transform: scale(1.2);
       transform-origin: 50% 50%;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_img a img {}
-    
+
     #_popIn_recommend ._popIn_recommend_art_title {
       padding: 10px 10px 30px 10px;
       color: #484848;
@@ -328,7 +329,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       line-height: 2em;
       overflow: hidden;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_art_title a {
       transition: .5s;
       display: block;
@@ -338,52 +339,52 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       line-height: 2em;
       overflow: hidden;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_article {
       display: inline-block;
       width: 49%;
       position: relative;
       vertical-align: top;
     }
-    
+
     #_popIn_recommend ._popIn_idx1 {
       margin-right: 1%;
     }
-    
+
     #_popIn_recommend ._popIn_idx2 {
       margin-left: 1%;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_article:hover > ._popIn_recommend_art_title {
       color: #0a58a6;
       text-decoration: underline;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_articles {}
-    
+
     #_popIn_recommend ._popIn_recommend_no_img {}
-    
+
     #_popIn_recommend ._popIn_recommend_art_media {
       color: #999;
       font-size: 10px;
       line-height: 12px;
       font-weight: normal;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_credit:hover {
       opacity: 1;
     }
-    
+
     ###_popIn_recommend ._popIn_recommend_article_ad ._popIn_recommend_art_img a {
       background-size: contain;
       background-repeat: no-repeat;
       background-color: #f3f3f3;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_credit {
       display: none;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_credit_image {
       display: inline-block;
       width: 40px;
@@ -395,7 +396,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       background-size: 40px 20px;
       vertical-align: text-top;
     }
-    
+
     #_popIn_recommend ._popIn_recommend_container:hover ._popIn_recommend_credit_image {
       background-position: 0px -10px;
     }
@@ -407,7 +408,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       clear: both;
       overflow: hidden;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_header {
       display: none;
       color: white;
@@ -417,29 +418,29 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       padding: 5px 0px;
       margin: 5px 0px;
     }
-    
+
     #_popIn_recommend_footer ._popIn_noimage a {
       background: url(//api.popin.cc/images/noimg.png) no-repeat center;
     }
-    
+
     #_popIn_recommend_footer ._popIn_noimage a img {
       display: none;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_category {
       display: none;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_date {
       display: none;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_img {
       width: 100%;
       height: 120px;
       margin-bottom: 7px;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_img a {
       margin: 0px;
       width: 100%;
@@ -455,23 +456,23 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       -o-transition: opacity 500ms;
       -webkit-transition: opacity 500ms;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_img a img {}
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_title {
       height: 56px;
       font-size: 14px;
       line-height: 18px;
       overflow: hidden;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_title a {
       font-size: 14px;
       line-height: 18px;
       height: 56px;
       text-decoration: none;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_article {
       display: inline-block;
       width: 24%;
@@ -479,40 +480,40 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       position: relative;
       vertical-align: top;
     }
-    
+
     #_popIn_recommend_footer ._popIn_idx2,
     ._popIn_idx6 {
       margin: 0px 1.333% 0px 1.333%;
     }
-    
+
     #_popIn_recommend_footer ._popIn_idx3,
     ._popIn_idx7 {
       margin: 0px 1.333% 0px 0px;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_article:hover > ._popIn_recommend_art_title a {
       text-decoration: underline;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_articles {}
-    
+
     #_popIn_recommend_footer ._popIn_recommend_no_img {}
-    
+
     .css_selector {
       css_attribute: value;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_art_media {
       color: #999;
       font-size: 10px;
       line-height: 12px;
       font-weight: normal;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_credit:hover {
       opacity: 1;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_credit {
       position: absolute;
       right: 5px;
@@ -520,7 +521,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       opacity: 0.6;
       bottom: 0px;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_credit_image {
       display: inline-block;
       width: 40px;
@@ -532,7 +533,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       background-size: 40px 20px;
       vertical-align: text-top;
     }
-    
+
     #_popIn_recommend_footer ._popIn_recommend_container:hover ._popIn_recommend_credit_image {
       background-position: 0px -10px;
     }
@@ -543,16 +544,16 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       top: -10000px;
       z-index: 10001
     }
-    
+
     .fb_reposition {
       overflow: hidden;
       position: relative
     }
-    
+
     .fb_invisible {
       display: none
     }
-    
+
     .fb_reset {
       background: none;
       border: 0;
@@ -579,15 +580,15 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       white-space: normal;
       word-spacing: normal
     }
-    
+
     .fb_reset>div {
       overflow: hidden
     }
-    
+
     .fb_link img {
       border: none
     }
-    
+
     @keyframes fb_transform {
       from {
         opacity: 0;
@@ -598,34 +599,34 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
         transform: scale(1)
       }
     }
-    
+
     .fb_animate {
       animation: fb_transform .3s forwards
     }
-    
+
     .fb_dialog {
       background: rgba(82, 82, 82, .7);
       position: absolute;
       top: -10000px;
       z-index: 10001
     }
-    
+
     .fb_reset .fb_dialog_legacy {
       overflow: visible
     }
-    
+
     .fb_dialog_advanced {
       padding: 10px;
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
       border-radius: 8px
     }
-    
+
     .fb_dialog_content {
       background: #fff;
       color: #333
     }
-    
+
     .fb_dialog_close_icon {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
       _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);
@@ -637,37 +638,37 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       top: 17px;
       width: 15px
     }
-    
+
     .fb_dialog_mobile .fb_dialog_close_icon {
       top: 5px;
       left: 5px;
       right: auto
     }
-    
+
     .fb_dialog_padding {
       background-color: transparent;
       position: absolute;
       width: 1px;
       z-index: -1
     }
-    
+
     .fb_dialog_close_icon:hover {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;
       _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
     }
-    
+
     .fb_dialog_close_icon:active {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;
       _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
     }
-    
+
     .fb_dialog_loader {
       background-color: #f6f7f9;
       border: 1px solid #606060;
       font-size: 25px;
       padding: 20px
     }
-    
+
     .fb_dialog_top_left,
     .fb_dialog_top_right,
     .fb_dialog_bottom_left,
@@ -677,31 +678,31 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       overflow: hidden;
       position: absolute
     }
-    
+
     .fb_dialog_top_left {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
       left: -10px;
       top: -10px
     }
-    
+
     .fb_dialog_top_right {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
       right: -10px;
       top: -10px
     }
-    
+
     .fb_dialog_bottom_left {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
       bottom: -10px;
       left: -10px
     }
-    
+
     .fb_dialog_bottom_right {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
       right: -10px;
       bottom: -10px
     }
-    
+
     .fb_dialog_vert_left,
     .fb_dialog_vert_right,
     .fb_dialog_horiz_top,
@@ -711,41 +712,41 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       filter: alpha(opacity=70);
       opacity: .7
     }
-    
+
     .fb_dialog_vert_left,
     .fb_dialog_vert_right {
       width: 10px;
       height: 100%
     }
-    
+
     .fb_dialog_vert_left {
       margin-left: -10px
     }
-    
+
     .fb_dialog_vert_right {
       right: 0;
       margin-right: -10px
     }
-    
+
     .fb_dialog_horiz_top,
     .fb_dialog_horiz_bottom {
       width: 100%;
       height: 10px
     }
-    
+
     .fb_dialog_horiz_top {
       margin-top: -10px
     }
-    
+
     .fb_dialog_horiz_bottom {
       bottom: 0;
       margin-bottom: -10px
     }
-    
+
     .fb_dialog_iframe {
       line-height: 0
     }
-    
+
     .fb_dialog_content .dialog_title {
       background: #6d84b4;
       border: 1px solid #365899;
@@ -754,13 +755,13 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       font-weight: bold;
       margin: 0
     }
-    
+
     .fb_dialog_content .dialog_title>span {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
       float: left;
       padding: 5px 0 7px 26px
     }
-    
+
     body.fb_hidden {
       -webkit-transform: none;
       height: 100%;
@@ -771,7 +772,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       left: 0;
       width: 100%
     }
-    
+
     .fb_dialog.fb_dialog_mobile.loading {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
       min-height: 100%;
@@ -781,7 +782,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       top: 0;
       z-index: 10001
     }
-    
+
     .fb_dialog.fb_dialog_mobile.loading.centered {
       width: auto;
       height: auto;
@@ -789,15 +790,15 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       min-width: initial;
       background: none
     }
-    
+
     .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
       width: 100%
     }
-    
+
     .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
       background: none
     }
-    
+
     .loading.centered #fb_dialog_loader_close {
       color: #fff;
       display: block;
@@ -805,7 +806,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       clear: both;
       font-size: 19px
     }
-    
+
     #fb-root #fb_dialog_ipad_overlay {
       background: rgba(0, 0, 0, .45);
       position: absolute;
@@ -817,15 +818,15 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       min-height: 100%;
       z-index: 10000
     }
-    
+
     #fb-root #fb_dialog_ipad_overlay.hidden {
       display: none
     }
-    
+
     .fb_dialog.fb_dialog_mobile.loading iframe {
       visibility: hidden
     }
-    
+
     .fb_dialog_content .dialog_header {
       -webkit-box-shadow: white 0 1px 1px -1px inset;
       background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
@@ -839,27 +840,27 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       vertical-align: middle;
       white-space: nowrap
     }
-    
+
     .fb_dialog_content .dialog_header table {
       -webkit-font-smoothing: subpixel-antialiased;
       height: 43px;
       width: 100%
     }
-    
+
     .fb_dialog_content .dialog_header td.header_left {
       font-size: 13px;
       padding-left: 5px;
       vertical-align: middle;
       width: 60px
     }
-    
+
     .fb_dialog_content .dialog_header td.header_right {
       font-size: 13px;
       padding-right: 5px;
       vertical-align: middle;
       width: 60px
     }
-    
+
     .fb_dialog_content .touchable_button {
       background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
       border: 1px solid #29487d;
@@ -873,7 +874,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       padding: 4px 12px;
       position: relative
     }
-    
+
     .fb_dialog_content .dialog_header .touchable_button input {
       border: none;
       background: none;
@@ -884,7 +885,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       padding: 2px 6px 3px 6px;
       text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
     }
-    
+
     .fb_dialog_content .dialog_header .header_center {
       color: #fff;
       font-size: 17px;
@@ -893,7 +894,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       text-align: center;
       vertical-align: middle
     }
-    
+
     .fb_dialog_content .dialog_content {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
       border: 1px solid #555;
@@ -901,26 +902,26 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       border-top: 0;
       height: 150px
     }
-    
+
     .fb_dialog_content .dialog_footer {
       background: #f6f7f9;
       border: 1px solid #555;
       border-top-color: #ccc;
       height: 40px
     }
-    
+
     #fb_dialog_loader_close {
       float: left
     }
-    
+
     .fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
       text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
     }
-    
+
     .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
       visibility: hidden
     }
-    
+
     #fb_dialog_loader_spinner {
       animation: rotateSpinner 1.2s linear infinite;
       background-color: transparent;
@@ -930,7 +931,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       height: 24px;
       width: 24px
     }
-    
+
     @keyframes rotateSpinner {
       0% {
         transform: rotate(0deg)
@@ -939,61 +940,61 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
         transform: rotate(360deg)
       }
     }
-    
+
     .fb_iframe_widget {
       display: inline-block;
       position: relative
     }
-    
+
     .fb_iframe_widget span {
       display: inline-block;
       position: relative;
       text-align: justify
     }
-    
+
     .fb_iframe_widget iframe {
       position: absolute
     }
-    
+
     .fb_iframe_widget_fluid_desktop,
     .fb_iframe_widget_fluid_desktop span,
     .fb_iframe_widget_fluid_desktop iframe {
       max-width: 100%
     }
-    
+
     .fb_iframe_widget_fluid_desktop iframe {
       min-width: 220px;
       position: relative
     }
-    
+
     .fb_iframe_widget_lift {
       z-index: 1
     }
-    
+
     .fb_hide_iframes iframe {
       position: relative;
       left: -10000px
     }
-    
+
     .fb_iframe_widget_loader {
       position: relative;
       display: inline-block
     }
-    
+
     .fb_iframe_widget_fluid {
       display: inline
     }
-    
+
     .fb_iframe_widget_fluid span {
       width: 100%
     }
-    
+
     .fb_iframe_widget_loader iframe {
       min-height: 32px;
       z-index: 2;
       zoom: 1
     }
-    
+
     .fb_iframe_widget_loader .FB_Loader {
       background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
       height: 32px;
@@ -1012,7 +1013,7 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
       <div id="headerTopWrap">
         <ul id="subMenu">
           <li>
-            <h3><a href="https://www.juksy.com/">首頁</a></h3>
+            <h3><a href="https://www.juksy.com/">首頁hi</a></h3>
           </li>
           <li><a href="https://www.juksy.com/site/contact">聯絡我們</a></li>
           <li><a href="https://www.juksy.com/events">主題特企</a></li>
@@ -1210,11 +1211,14 @@ src="https://www.facebook.com/tr?id=1646784798869284&amp;ev=PageView&amp;noscrip
                   <br>
                 </p>
                 <div class="juksy_ads" style="text-align: center;">
-                  <div class="dfp_center ad-block ad-done" id="dfp_article_content_inside_0" data-module="googledfp" data-adunit="/35943210/juksy_content_inside_300x250_ad" data-dimensions="[300,250]" data-google-query-id="CL705e2P3dICFc-CvQodo24NMA">
-                    <div id="google_ads_iframe_/35943210/juksy_content_inside_300x250_ad_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;">
-                      <iframe frameborder="0" src="./index_files/container.html" id="google_ads_iframe_/35943210/juksy_content_inside_300x250_ad_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe>
-                    </div>
-                  </div>
+                <!-- /35943210/juksy_article_mid_640x360 -->
+                <div id='div-gpt-ad-1489737468957-0'>
+                  <script>
+                  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1489737468957-0'); });
+                  </script>
+                </div>
+
+                <div id="AdAsia"></div>
                 </div>
                 <p>
                   <br>
